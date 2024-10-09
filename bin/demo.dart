@@ -48,6 +48,16 @@ void main() {
         print(i);
       }
     }
+
+    // determine lowest and hightest
+    List<Number> numbers = [a, b, c];
+    Number lowest =
+        numbers.reduce((curr, next) => curr.value < next.value ? curr : next);
+    Number highest =
+        numbers.reduce((curr, next) => curr.value > next.value ? curr : next);
+
+    print("The lowest number is ${lowest.order}");
+    print("The highest number is ${highest.order}");
   }
 }
 
